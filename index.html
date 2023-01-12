@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Dz5</title>
+</head>
+<header>
+    <div>
+        <h1>Sign up NOW</h1>
+    </div>
+  </header>
+<body>
+    <main>
+        <section>
+            <form method="get" action="">
+                    <!--Full name-->
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Typing your Name..." required>
+                    </div>
+                    <!--Email-->
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="User@email.com" required>
+                    </div>
+                    <!--Password-->
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <!--Password repeat-->
+                    <div>
+                        <label for="passwordrep">Repeate the password</label>
+                        <input type="password" name="password" id="passwordrep" required>
+                    </div>
+                    <!--Sex-->
+                    <div>
+                        <label>Sex</label>
+                        <div>
+                            <input type="radio" name="sex" id="sexmale" value="Male"required>
+                            <label for="sexmale">Male</label> 
+                        </div>
+                        <div>
+                            <input type="radio" name="sex" id="sexfemale" value="Female"required>
+                            <label for="sexfemale">Female</label>
+                        </div>
+                    </div>
+                    <!--Age-->
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" required>
+                    </div>
+                    <!--Course-->
+                    <div>
+                        <label for="course">Course</label>
+                        <select name="course" id="course" placeholder="" required>
+                            <option value="default" disabled="disabled">**Select Course**</option>
+                            <optgroup label="Technical">
+                                <option value="front-end">Front-End</option>
+                                <option value="back-end">Back-End</option>
+                                <option value="qa-manual">QA Manual</option>
+                            </optgroup>
+                            <optgroup label="Non-technical">
+                                <option value="project-management">Project Management</option>
+                             </optgroup>
+                        </select>
+                    </div>
+                    <!--Full adress-->
+                    <div>
+                        <label for="adress">Full adress</label>
+                        <textarea name="adress" id="adress" cols="28" rows="4" 
+                        placeholder=" Write your country, region, city/village, street" required></textarea>
+                    </div>
+                    <!--Agreement-->
+                    <div>
+                        <input type="checkbox" required> <p>I agree to the processing of personal data</p>
+                    </div>
+                    <div>
+                         <label for="datetime">Your signification has been sent at</label>
+                         <input type="datetime-local" id="datetime" required>
+                    <div>
+                        <button type="reset">Clear the form</button>
+                        <button type="submit">Sign up</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p></p>
+        </footer>  
+</body>
+</html>
